@@ -1,2 +1,9 @@
 # DSA_Java
- Here I am Learning Java and DSA 
+ Here I am Learning Java and DSA.
+
+ Day1-Day6 --> I have learnt Basic's of java & it's syntax.
+
+ Day7      --> Functions,Return types,Functions with arguments....
+
+ Day8      --> Arrays, Array Initialization, Inputting into Arrays,Outputting from Array, 2D Array, ArrayList,Basic Array Question
+ 

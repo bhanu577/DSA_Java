@@ -6,4 +6,6 @@
  Day7      --> Functions,Return types,Functions with arguments....
 
  Day8      --> Arrays, Array Initialization, Inputting into Arrays,Outputting from Array, 2D Array, ArrayList,Basic Array Question
+
+ Day9      --> Learnt Linear Search & Two Leetcode questions
  

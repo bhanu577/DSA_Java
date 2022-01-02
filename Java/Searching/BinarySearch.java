@@ -16,7 +16,7 @@ public class BinarySearch {
     {
         int start=0,end=arr.length;
 
-        while(start<end){
+        while(start<=end){
             int mid=(start+end)/2;
             if(arr[mid]==target){
                 return mid;

@@ -1,7 +1,7 @@
 # DSA_Java
-#Here I am Learning Java and DSA.
+Here I am Learning Java and DSA.
 
- #Day1-Day6 --> I have learnt Basic's of java & it's syntax.
+ Day1-Day6 --> I have learnt Basic's of java & it's syntax.
 
  Day7      --> Functions,Return types,Functions with arguments....
 

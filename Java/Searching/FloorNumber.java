@@ -9,7 +9,7 @@ public class FloorNumber {
     }
     static int search(int[] arr,int target)
     {
-        int start=0,end=arr.length;
+        int start=0,end=arr.length-1;
         if(target>arr[arr.length-1]){
             return -1;
         }

@@ -3,13 +3,13 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 public class CeilingNumber {
     public static void main(String[] args) {
         int[] arr={2,5,9,12,16,22,77,99};
-        int target=15;
+        int target=3;
         int result=search(arr,target);
         System.out.println("The celling number "+result);
     }
     static int search(int[] arr,int target)
     {
-        int start=0,end=arr.length;
+        int start=0,end=arr.length-1;
 
         while(start<=end){
             int mid=(start+end)/2;

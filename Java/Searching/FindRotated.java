@@ -1,23 +1,28 @@
+import java.util.*;
 public class FindRotated {
-    Solution s=new Solution();
+    public static void main(String[] args) {
+        Solution s=new Solution();
     int[] arr={4,5,6,7,0,1,2};
-    int tar=0;
-    s.search(arr,tar);
+    int res=s.search(arr,5);
+    System.out.println(res);
+    }
+    
 }
 class Solution {
-    public void search(int[] nums,int target) {
+    public int search(int[] nums,int target) {
         int pivot=pivotIndex(nums);
-        int arr1Res=searchIndex(nums,target,0,pivot);
-        int arr2res=searchIndex(nums,target,pivot+1,nums.length);
-        if(arr1Res>0){
-            return arr1Res;
+        //System.out.println(pivot);
+        if(pivot==-1){
+            return searchIndex(nums,target,0,nums.length-1);
         }
-        else if(arr2Res>0){
-            return arr2Res;
+        
+        if(target==nums[pivot]){
+            return pivot;
         }
-        else{
-            return -1;
+        if(target>=nums[0]){
+            return searchIndex(nums,target,0,pivot-1);
         }
+            return searchIndex(nums,target,pivot+1,nums.length-1);
     }
 
 
@@ -25,17 +30,22 @@ class Solution {
         int start=0;
         int end=arr.length-1;
 
-        while(start<end){
+        while(start<=end){
             int mid=start+(end-start)/2;
-            if(arr[mid]>arr[mid+1])
-            {
-                end=mid;
+            if(mid<end && arr[mid]>arr[mid+1]){
+                return mid;
+            }
+            if(mid>start && arr[mid]<arr[mid-1]){
+                return mid-1;
+            }
+            if(arr[mid]<=arr[start]){
+                end=mid-1;
             }
             else{
                 start=mid+1;
             }
         }
-        return mid;
+        return -1;
     }
 
     public int searchIndex(int[] arr,int target,int start,int end){

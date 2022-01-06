@@ -18,4 +18,6 @@ Here I am Learning Java and DSA.
  Day13     --> Binary Search problems like Mountain Array,Infinite Binary Search,PeakIndex leetCode problems.
 
  Day14     --> Find target in rotating array.
+
+ Day15     --> Searching in a matrix using rows&cols,
  
